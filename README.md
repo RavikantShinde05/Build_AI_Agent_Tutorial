@@ -18,17 +18,17 @@ Core components:
 
 ## Architecture diagram:
 
-User
+- User                          
  ↓
-Agent Interface
+- Agent Interface               
  ↓
-Reasoning Engine (LLM)
+- Reasoning Engine (LLM)        
  ↓
-Planner
+- Planner                       
  ↓
-Tools / APIs / Blockchain
+- Tools / APIs / Blockchain     
  ↓
-Memory
+- Memory                        
 
 
 ## 2. Types of AI Agents:
