@@ -12,6 +12,7 @@ MCP categorizes these external systems into three primary architectural pillars:
 * Tools: Providing functional capabilities (e.g., web search engines, computational calculators).
 * Workflows: Providing structured interaction patterns (e.g., specialized prompt templates).
 
+
 ## 2. Architectural Framework:- 
 
 The MCP architecture is predicated on the decoupling of the environment from the application logic through a Server-Client relationship. This separation of concerns ensures that the AI model remains agnostic to the underlying implementation details of the data it consumes or the tools it invokes.
@@ -23,6 +24,7 @@ This framework handles two distinct types of interfaces:
 
 * Resources (State): Static or dynamic data providers, such as local log files or SQL database records, which provide the model with essential context.
 * Tools (Capability): Executable functions that allow the model to perform actions, such as performing a calculation or triggering a search query.
+
 
 ## 3. Stakeholder Value Propositions:-
 
@@ -41,6 +43,7 @@ MCP enables a transition from passive conversational models to active, context-a
 * Enterprise Data Intelligence: Agents utilize MCP to perform federated queries across disparate internal databases, providing a natural-language-to-SQL abstraction layer for multi-source data analysis.
 * Hardware Integration: MCP facilitates the interface between AI models and low-level system kernels, allowing an agent to generate 3D assets in Blender and transmit those instructions directly to a 3D printer’s serial interface.
 
+
 ## 5. Development Ecosystem and Tooling:-
 
 To support the rapid deployment of this standard, the MCP ecosystem provides a robust suite of development and debugging resources:
@@ -49,6 +52,7 @@ To support the rapid deployment of this standard, the MCP ecosystem provides a r
 * Flexible Connection Interfaces: The protocol supports diverse transport layers, allowing for both local connections (via stdio/IPC) and remote connections to cloud-based services.
 * MCP Inspector: A specialized developer tool designed for testing and verifying protocol compliance, allowing developers to debug server responses and resource exposure in a controlled environment.
 * Registry Integration: A growing repository of pre-configured MCP servers allows developers to instantly add well-known data sources and tools to their AI applications.
+
 
 ## 6. Conclusion: The Significance of MCP
 
