@@ -1,5 +1,5 @@
 ## The Dicrectory educates you about Lang-Ecosystem means understanding what is LangChain, LangGraph, LangFlow & LangSmith.
-This suite of tools **LangChain, LangGraph, LangFlow, and LangSmith**—provides a comprehensive ecosystem for developing, managing, and monitoring applications powered by large language models (LLMs).
+This suite of tools **LangChain, LangGraph, LangFlow, and LangSmith** provides a comprehensive ecosystem for developing, managing, and monitoring applications powered by large language models (LLMs).
 
 ### **1. LangChain: The Foundational Framework**
 *   **What it is:** An open-source framework designed to help developers build applications by **chaining prompts**, interacting with external data, and maintaining context.
