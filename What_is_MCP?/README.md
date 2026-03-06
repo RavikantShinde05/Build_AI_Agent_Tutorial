@@ -1,14 +1,14 @@
 # MCP (Model Context Protocol): 
 it is an communicaiton layer between LLM's by which the resources(like context anad tools) are accessible for Training LLM's to get train.
 MCP server provides access to the external service with the functionality and tools in it. The basic architechture:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e68a1adb-cf52-45c1-a666-05b988058484" />
+<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/e68a1adb-cf52-45c1-a666-05b988058484" />
 
 
 Following is the Working Flow of an MCP, yes it a little bit complex but it provides us the functionality and tools, 
 which we don't have to write manually and the inclusion of Claude will make it more easier because with "NLP", 
 it will do the technical work and writing command just like that by a simple "Prompt"
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7db5923d-a75b-444a-b4ca-f9d8b0ee672a" />
+<img width="1000" height="850" alt="image" src="https://github.com/user-attachments/assets/7db5923d-a75b-444a-b4ca-f9d8b0ee672a" />
 
 
 # Create an MCP Server by writing Tools in it:
