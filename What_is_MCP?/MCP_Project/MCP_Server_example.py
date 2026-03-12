@@ -28,7 +28,7 @@ docs = {
 
 )
 def read_document(
-    doc_id: str = Field("Id of the document to be Read")
+    doc_id: str = Field(description="Id of the document to be Read")
 ):
     if doc_id not in docs:  # If the ID does not exist in the list of Docs.
         raise ValueError(f"Doc with id {doc_id} not found")
@@ -53,3 +53,4 @@ def edit_document(
 
 # Replace the "old string" with "new string"
     docs[doc_id] = docs[doc_id].replace(old_str, new_str)
+
