@@ -51,3 +51,41 @@ Conclusion
 RAG is not just a single technology but a powerful technique that mitigates the core weaknesses of AI. 
 By maintaining data privacy and providing cost-effective accuracy, RAG is bridge between generic AI and specialized, expert systems. 
 For organizations looking to implement AI safely and effectively, RAG is no longer optional—it is the standard.
+
+Based on the sources provided, Retrieval-Augmented Generation (RAG) is a technique that turns an AI model's task into an "open-book exam," allowing it to access real-time databases to improve accuracy. 
+While the standard pipeline involves ingestion (preparing data into vector embeddings) and retrieval/generation (finding relevant context to answer a query), there are several specialized architectures used in the industry.
+
+Below are the different types of RAG, their architectures, and their applications:
+1. Standard (Naive) RAG
+Architecture: This is the simplest form where a user query is converted into an embedding, the top relevant data chunks are retrieved from a vector database, and these are added to the prompt for the model to generate a response.
+
+Applications: Best for FAQs on websites or simple support chatbots with clean, straightforward documentation.
+
+3. Hybrid RAG
+Architecture: Combines vector search (which understands meaning) with keyword search (which matches exact words).
+This covers the weakness of standard RAG, which might struggle with specific names or technical IDs.
+Applications: Highly common in production-level systems, e-commerce searches, and enterprise-level searches where specific terms or product IDs must be matched exactly.
+
+5. RAG with Memory
+Architecture: Adds a separate memory layer on top of the standard RAG pipeline to maintain a running thread of the conversation.
+This allows the system to understand follow-up questions like "can you explain more about it?" where "it" refers to a previous topic.
+Applications: Essential for creating advanced support assistants and interactive chatbots that require conversational context.
+6. Graph RAG
+Architecture: Instead of treating data as independent chunks, this structures data as a knowledge graph.
+It uses nodes (entities) and edges (relationships) to preserve the connections between different pieces of information.
+Applications: Ideal for knowledge-heavy systems such as fraud detection, legal research, and complex academic research where relationships between entities are critical.
+
+7. Agentic RAG
+Architecture: A multi-step, autonomous system that can break down complex queries into smaller parts.
+It can perform multiple retrievals and use additional tools like web searches or specialized APIs (e.g., finance APIs) to gather a complete answer.
+
+Applications: Used for complex analytical queries, such as comparing the price hikes of gold against other metals over a specific year.
+
+7. Multimodal RAG
+Architecture: Unlike standard systems that only process text, this architecture is capable of retrieving and processing information from images, videos, and audio.
+Applications: Crucial for the medical industry (processing X-rays alongside text reports), as well as surveillance and security sectors.
+
+8. Self-RAG (Self-Reflective RAG)
+Architecture: The system generates an initial draft response, then critiques and analyzes it to see if it is high-quality or if more information is needed before delivering the final output.
+Applications: Best for industries with strong regulations or those that are research-heavy, where the accuracy of the final response must be rigorously verified.
+In practice, organizations often combine these architectures to further improve performance and handle more sophisticated real-world tasks.
