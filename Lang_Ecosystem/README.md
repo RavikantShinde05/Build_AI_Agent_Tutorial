@@ -25,7 +25,7 @@ This suite of tools **LangChain, LangGraph, LangFlow, and LangSmith** provides a
 *   **Merits:** It provides deep insights into performance, including **token usage, cost, error rates, and latency**. Crucially, it is independent and can be used with any LLM framework, not just LangChain.
 *   **Demerits:** If your application is straightforward and doesn't require extensive testing, the overhead of setting up LangSmith might be unnecessary.
 
-### **Summary Comparison Table**
+### **Comparison Table**
 
 | Tool | Core Focus | Best Use Case | Relation to LangChain |
 | :--- | :--- | :--- | :--- |
