@@ -53,16 +53,8 @@ As the technology matures, different architectures are solving more complex prob
 Hybrid Search: This is highly popular in production because it combines the meaning-based power of vector search with the precision of keyword search for specific IDs or names.
 Graph RAG: By structuring data as a knowledge graph, this architecture tracks relationships between different entities, making it ideal for fraud detection or legal research.
 
-Agentic RAG:
+- Agentic RAG:
 For complex queries that can't be solved in one go (e.g., "Compare gold price hikes in 2025 with other metals"), the system acts as an autonomous agent, breaking the query into parts and using multiple tools to find the answer.
-
-## Conclusion
-RAG is not just a single technology but a powerful technique that mitigates the core weaknesses of AI. 
-By maintaining data privacy and providing cost-effective accuracy, RAG is bridge between generic AI and specialized, expert systems. 
-For organizations looking to implement AI safely and effectively, RAG is no longer optional—it is the standard.
-
-Based on the sources provided, Retrieval-Augmented Generation (RAG) is a technique that turns an AI model's task into an "open-book exam," allowing it to access real-time databases to improve accuracy. 
-While the standard pipeline involves ingestion (preparing data into vector embeddings) and retrieval/generation (finding relevant context to answer a query), there are several specialized architectures used in the industry.
 
 ## Below are the different types of RAG, their architectures, and their applications:
 ### 1. Standard (Naive) RAG
@@ -101,7 +93,17 @@ Architecture: Unlike standard systems that only process text, this architecture 
 Crucial for the medical industry (processing X-rays alongside text reports), as well as surveillance and security sectors.
 
 ### 7. Self-RAG (Self-Reflective RAG)
-Architecture: The system generates an initial draft response, then critiques and analyzes it to see if it is high-quality or if more information is needed before delivering the final output.
+### Architecture: 
+The system generates an initial draft response, then critiques and analyzes it to see if it is high-quality or if more information is needed before delivering the final output.
+
 - Applications:
 Best for industries with strong regulations or those that are research-heavy, where the accuracy of the final response must be rigorously verified.
 In practice, organizations often combine these architectures to further improve performance and handle more sophisticated real-world tasks.
+
+## Conclusion
+RAG is not just a single technology but a powerful technique that mitigates the core weaknesses of AI. 
+By maintaining data privacy and providing cost-effective accuracy, RAG is bridge between generic AI and specialized, expert systems. 
+For organizations looking to implement AI safely and effectively, RAG is no longer optional—it is the standard.
+
+Based on the sources provided, Retrieval-Augmented Generation (RAG) is a technique that turns an AI model's task into an "open-book exam," allowing it to access real-time databases to improve accuracy. 
+While the standard pipeline involves ingestion (preparing data into vector embeddings) and retrieval/generation (finding relevant context to answer a query), there are several specialized architectures used in the industry.
