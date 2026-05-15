@@ -1,7 +1,8 @@
-# Build_AI_Agent_Tutorial
+# Learning_and_Build_AI_Agent:
 
-Building an AI agent today typically means creating a system that can perceive inputs, reason, plan, and act autonomously using AI models. I’ll explain both the general architecture and how to build one practically, including Web3 integration potential.
-Learning about AI is just like learning a sequencial process of a system where there are stages or points where multiple components, tools are used to wisely to generate the output.
+- Building an AI agent today typically means creating a system that can perceive inputs, reason, plan, and act autonomously using AI models. I’ll explain both the general architecture and how to build one practically, including Web3 integration potential.
+
+- Learning about AI is just like learning a sequencial process of a system where there are stages or points where multiple components, tools are used to wisely to generate the output.
 Take an example of a Human being, how usually a human works or functions taking that into consideration, put it into a systematic way in the AI system like: 
 
 ## 1. What is an AI Agent:
@@ -53,7 +54,7 @@ Common production agents:
 
 ## 3. Tech Stack:
 
-Core AI
+## Core AI
 
 - Python
 
@@ -61,9 +62,10 @@ Core AI
 
 - OpenAI API or Llama
 
-Memory:
+## Memory:
 
-  - Vector DB:
+- Vector DB:
+It is nothing but a database which stores data in an vector embeddings form this help model to search in a semantic way or in simple word it a searching using meaning. 
 
     - Pinecone
 
@@ -71,7 +73,7 @@ Memory:
 
     - Weaviate
 
-Tools:
+## Tools:
 
 - REST APIs
 
@@ -79,11 +81,11 @@ Tools:
 
 - Database
 
-Frontend:
+## Frontend:
 
 - React / Next.js
 
-Backend:
+## Backend:
 
 - FastAPI
 
