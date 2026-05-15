@@ -1,10 +1,13 @@
 # Build_AI_Agent_Tutorial
 
-Building an AI agent today typically means creating a system that can perceive input, reason, plan, and act autonomously using AI models. I’ll explain both the general architecture and how to build one practically, including Web3 integration potential.
+Building an AI agent today typically means creating a system that can perceive inputs, reason, plan, and act autonomously using AI models. I’ll explain both the general architecture and how to build one practically, including Web3 integration potential.
+Learning about AI is just like learning a sequencial process of a system where there are stages or points where multiple components, tools are used to wisely to generate the output.
+Take an example of a Human being, how usually a human works or functions taking that into consideration, put it into a systematic way in the AI system like: 
 
 ## 1. What is an AI Agent:
 An AI agent is a system composed of:
-Core components:
+
+## Core components:
 
 | Component | Function                                     |
 | --------- | -------------------------------------------- |
@@ -64,7 +67,7 @@ Memory:
 
     - Pinecone
 
-    - Chroma
+    - Chromadb
 
     - Weaviate
 
