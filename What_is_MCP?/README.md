@@ -1,5 +1,5 @@
 # MCP (Model Context Protocol): 
-it is an communicaiton layer between LLM's by which the resources(like context anad tools) are accessible for Training LLM's to get train.
+it is an communicaiton layer between LLM's by which the resources(like context and tools) are accessible for Training LLM's to get train.
 MCP server provides access to the external service with the functionality and tools in it. The basic architechture:
 
 ### The MCP components:
