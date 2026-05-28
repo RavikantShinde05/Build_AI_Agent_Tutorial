@@ -94,16 +94,44 @@ Crucial for the medical industry (processing X-rays alongside text reports), as 
 
 ### 7. Self-RAG (Self-Reflective RAG)
 ### Architecture: 
-The system generates an initial draft response, then critiques and analyzes it to see if it is high-quality or if more information is needed before delivering the final output.
+The system generates an initial draft response, then critiques and analyzes, it to see if it is high-quality or if more information is needed before delivering the final output.
 
 - Applications:
 Best for industries with strong regulations or those that are research-heavy, where the accuracy of the final response must be rigorously verified.
 In practice, organizations often combine these architectures to further improve performance and handle more sophisticated real-world tasks.
 
+## Three Main Components of RAG Pipeline System:
+### Chunk Strategies: 
+Chunking is the method or process that helps to split the Data into different chunks, for example creating snowballs of different size. There a lot of different types of chunking strategies, 
+depending on the application strategies are implemented.
+- FIXED SIZED CHUNKING: In this we split the data into fixed sized of chuncks, like after certain limit or token limit we create a chunk (for example after every 1000 tokens create a new chunk). These systems can have their own drawbacks like this one can break the context mid sentence. it has fixed sized chunking with optional overlap.
+- HIERARCHICAL CHUNKING: This system is more complex to implement but very popular in the production level systems. Here we create our chunks on the basis of different sections like ( Pages, paragraph, sentences, etc), it has parent and child chunk.
+- Semantic Chunking: In Semantic Chunking, the chunking of Data is completely based on Semantic (Meaning), similarity based or relation based we can say, (Like Topics). This process is slower but it creates higher quality chunks which indirectly increases the accuracy of LLM models.
+
+### Tips : 
+if you want to implement chunking there are most popular libraries are 
+- LangChain,
+- LlamaIdex,
+- HayStack.
+
+### Embedding Models:
+For creating the Embeddings there are multiple, popular embedding models like
+- OpenAI Text-embedding-3-Large.
+- Gemini Embeddings.
+- Sentence Transformers in (Hugging Face ecosystem).
+
+### Vector DataBases (or Knowledge Base DataBase):
+- ChromaDB,
+- Pinecone,
+- FAISS,
+- Azureindex,
+- Elastic Search, etc.
+
+
 ## Conclusion
 RAG is not just a single technology but a powerful technique that mitigates the core weaknesses of AI. 
 By maintaining data privacy and providing cost-effective accuracy, RAG is bridge between generic AI and specialized, expert systems. 
-For organizations looking to implement AI safely and effectively, RAG is no longer optional—it is the standard.
+For organizations looking to implement AI safely and effectively, RAG is no longer optional, now it is the standard.
 
 Based on the sources provided, Retrieval-Augmented Generation (RAG) is a technique that turns an AI model's task into an "open-book exam," allowing it to access real-time databases to improve accuracy. 
 While the standard pipeline involves ingestion (preparing data into vector embeddings) and retrieval/generation (finding relevant context to answer a query), there are several specialized architectures used in the industry.
