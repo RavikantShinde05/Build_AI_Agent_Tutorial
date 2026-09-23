@@ -7,14 +7,14 @@ MCP server provides access to the external service with the functionality and to
 - Resources
 - Tools
   
-<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/e68a1adb-cf52-45c1-a666-05b988058484" />
+<img width="750" height="500" alt="image" src="https://github.com/user-attachments/assets/e68a1adb-cf52-45c1-a666-05b988058484" />
 
 
 Following is the Working Flow of an MCP, yes it a little bit complex but it provides us the functionality and tools, 
 which we don't have to write manually and the inclusion of Claude will make it more easier because with "NLP", 
 it will do the technical work and writing command just like that by a simple "Prompt"
 
-<img width="1000" height="850" alt="image" src="https://github.com/user-attachments/assets/7db5923d-a75b-444a-b4ca-f9d8b0ee672a" />
+<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/7db5923d-a75b-444a-b4ca-f9d8b0ee672a" />
 
 
 # Create an MCP Server by writing Tools in it:
@@ -116,7 +116,7 @@ This immediate feedback loop makes MCP server development much more efficient an
 
 ### understanding the architecture of mcp client:
 
-<img width="750" height="600" alt="image" src="https://github.com/user-attachments/assets/8559bdc6-15bc-4528-a9a5-a3da6dda9cfb" />
+<img width="750" height="450" alt="image" src="https://github.com/user-attachments/assets/8559bdc6-15bc-4528-a9a5-a3da6dda9cfb" />
 
 The client session requires careful resource management - we need to properly clean up connections when we're done. That's why we wrap it in our own class that handles all the cleanup automatically.
 
