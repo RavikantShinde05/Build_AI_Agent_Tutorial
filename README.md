@@ -38,54 +38,32 @@ An AI agent is a system composed of:
 ## 2. Types of AI Agents:
 
 Common production agents:
-
 - Chat agent
-
 - Autonomous task agent
-
 - Trading agent
-
 - Blockchain agent
-
 - Research agent
-
 - Customer support agent
-
 
 ## 3. Tech Stack:
 
-## Core AI
-
+### Core AI
 - Python
-
 - LangChain or LangGraph
-
 - OpenAI API or Llama
 
-## Memory:
+### Memory:
 
 - Vector DB:
+
 It is nothing but a database which stores data in an vector embeddings form this help model to search in a semantic way or in simple word it a searching using meaning. 
 
-    - Pinecone
+- Pinecone
+- Chromadb
+- Weaviate
 
-    - Chromadb
-
-    - Weaviate
-
-## Tools:
+### Tools:
 
 - REST APIs
-
-- Blockchain RPC
-
 - Database
-
-## Frontend:
-
-- React / Next.js
-
-## Backend:
-
-- FastAPI
 
