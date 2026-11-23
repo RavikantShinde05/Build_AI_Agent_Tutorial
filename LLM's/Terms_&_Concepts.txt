@@ -1,0 +1,425 @@
+
+1. AI Models and LLMs
+Artificial intelligence (AI) is the broad field of making computer
+systems perform tasks that usually require human-like abilities, such as
+understanding language, recognizing images, making predictions, or
+solving problems.
+
+An AI model is a system that has learned patterns from data and can
+use what it learned to produce an output.
+
+A large language model (LLM) is a type of AI model designed to work
+with language. It can understand and generate text, answer questions,
+summarize information, and help with writing.
+
+Example: You ask an AI assistant to explain photosynthesis in simple
+words. Its language model processes your question and creates an
+explanation.
+
+Remember: All LLMs are AI models, but not all AI models are LLMs.
+Some AI models work with images, audio, or other kinds of data.
+2. Prompt
+A prompt is the question, instruction, or information you give an AI
+model.
+
+Example:
+- Vague prompt: "Tell me about space."
+- Clearer prompt: "Explain the solar system to a 10-year-old in five
+  short points."
+A clear prompt tells the AI what you want, gives useful context, and
+describes the format or level of detail you prefer.
+
+Remember: A prompt is the input or instruction you give to the AI.
+3. Tokens
+Tokens are the small pieces of text that a language model processes.
+A token might be a whole word, part of a word, a number, or punctuation.
+
+For example, a sentence is broken into tokens before the model processes
+it. The exact way it is split depends on the model.
+
+Tokens matter because:
+- Models have limits on how much text they can process at once.
+- Many AI services measure usage and charges in tokens.
+- Longer prompts and answers usually use more tokens.
+Remember: Tokens are the units of text a language model reads and
+produces. They are not always the same as words.
+4. Context
+Context is the information available to an AI model while it is
+working on a request.
+
+It may include your current question, earlier messages in the
+conversation, instructions, and relevant information from documents or
+tools.
+
+Example: You first tell an assistant that you are planning a family
+holiday. Then you ask it to suggest activities. It can use the holiday
+information you already provided when making suggestions.
+
+A model's context window is the maximum amount of information it can
+handle in one interaction, measured in tokens.
+
+Remember: Context is the information the model can refer to during a
+task. It is not necessarily permanent memory.
+5. Hallucination
+An AI hallucination happens when an AI gives information that sounds
+believable but is incorrect, made up, or unsupported.
+
+Example: You ask for the opening hours of a local library. The AI
+confidently gives hours that the library does not actually use.
+
+Ways to reduce hallucinations include:
+- Check important claims against reliable sources.
+- Ask the AI to show where information came from.
+- Provide trustworthy documents for it to use.
+- Verify facts, calculations, and instructions yourself.
+Remember: An AI can sound confident and still be wrong.
+6. Training Models
+Model training is the process of teaching an AI model by giving it
+data and adjusting its internal settings so it learns patterns.
+
+A simple comparison is teaching a student: the student studies many
+examples, practices, receives feedback, and gradually learns how to
+perform a task.
+
+Example: During language-model training, a model processes large
+collections of text and learns patterns in language, such as how words
+and ideas relate.
+
+Training a large model can require huge datasets, powerful computers,
+time, and specialist knowledge.
+
+Remember: Training is how a model learns its capabilities and
+patterns from data.
+7. Fine-tuning
+Fine-tuning means taking an already-trained model and training it
+further on a smaller, more focused collection of examples.
+
+Example: A company has a general language model and wants it to
+respond in a consistent customer-support style. It may fine-tune the
+model using suitable examples of customer questions and good support
+replies.
+
+Fine-tuning can help a model become better suited to a particular task,
+style, or type of response. It is not always necessary; careful prompts
+or retrieval may be enough.
+
+Remember: Training builds a model's learned capabilities;
+fine-tuning further adapts an existing model.
+8. Inference and Serving
+These terms are related, but they mean different things.
+
+Inference is what happens when an already-trained model is used to
+produce an answer, prediction, or other output.
+
+Serving means making a model available to users or applications,
+often through a website or an API.
+
+Example:
+1. A company hosts an AI model on its servers.
+2. A user types a question into the company's app.
+3. The app sends the question to the model.
+4. The model performs inference and generates an answer.
+5. The app displays the answer to the user.
+Remember: Inference is the model doing the work; serving is the
+system that makes the model available.
+9. Retrieval-Augmented Generation (RAG)
+RAG stands for Retrieval-Augmented Generation. It is a method
+that lets an AI application find relevant information from a collection
+of documents or other sources and provide that information to a language
+model when answering a question.
+
+Example: Imagine a company has a folder containing employee
+policies. An employee asks, "How many days of annual leave do I get?"
+
+A RAG system can:
+1. Search the policy documents for the relevant section.
+2. Retrieve the useful information.
+3. provide that information to the AI model.
+4. Generate an answer based on the retrieved text.
+RAG is useful when an application needs to answer questions using
+specific documents or information that may change.
+
+Remember: RAG looks up relevant information first, then gives it to
+the model to help create an answer. It does not automatically guarantee
+that the answer is correct.
+10. Tools
+Tools are functions or services an AI application can use to do
+things beyond generating text.
+
+Examples include:
+- A calculator to perform calculations.
+- Web search to find information online.
+- A calendar service to check appointments.
+- A file tool to read or organize documents.
+- A database tool to look up stored information.
+Example: You ask an AI assistant to calculate the total cost of
+several items. The assistant can use a calculator tool rather than
+trying to do the arithmetic only by generating text.
+
+A model may decide that a tool is useful and request its use. The
+surrounding application runs the tool and returns the result to the
+model.
+
+Remember: A model generates responses; tools let an AI application
+interact with other services and perform actions.
+11. AI Agents
+An AI agent is an AI system that can work toward a goal by deciding
+on steps and using tools when needed.
+
+A simple chatbot usually responds to a message. An agent may do more:
+plan a task, take an action, inspect the result, and decide what to do
+next.
+
+Example: You ask an agent to help organize a meeting. Depending on
+its permissions, it might check calendars, find a suitable time, and
+prepare an invitation for your approval.
+
+Agents vary in how independent they are. Some only suggest actions;
+others can carry out approved actions.
+
+Remember: An agent combines an AI model with instructions, tools,
+and a process for completing tasks.
+12. Model Context Protocol (MCP)
+Model Context Protocol (MCP) is a standard way for AI applications
+to connect to external tools and information sources.
+
+Think of it as a common connection method between an AI application and
+services such as file systems, databases, or other tools.
+
+Example: An AI desktop assistant could connect to an MCP server that
+provides access to selected files. The assistant can then search or read
+those files when the user asks, subject to the permissions granted.
+
+MCP does not make a model intelligent by itself. It provides a
+consistent way for an AI application to access capabilities and
+information.
+
+Remember: MCP is a connection standard that helps AI applications
+work with external tools and data.
+13. Skills and SKILL.md
+A skill is a reusable set of instructions that helps an AI agent
+perform a particular kind of task.
+
+A file named SKILL.md is commonly used by some agent systems to
+describe a skill. It may explain what the task is, when to use the
+skill, what steps to follow, and which resources or tools may help.
+
+Example: A "travel planning" skill might tell an agent to ask for
+dates and budget, compare suitable travel options, check relevant
+details, and present a clear itinerary.
+
+The exact format and behavior depend on the AI platform or agent
+framework.
+
+Remember: A tool gives an agent an ability; a skill gives it
+reusable guidance for using its abilities to complete a task.
+14. Harness
+An AI harness is the surrounding software and control system that
+helps a model or agent work reliably.
+
+A harness may manage:
+- Instructions and prompts.
+- Tool connections.
+- Permissions and safety checks.
+- Conversation or task state.
+- Error handling and retries.
+- Logging and evaluation.
+Example: A coding assistant's harness may let the AI inspect project
+files, suggest edits, run tests, read errors, and ask before making
+sensitive changes.
+
+Remember: The model is the part that generates or reasons about
+outputs; the harness provides the environment and controls around it.
+15. Loop Engineering
+Loop engineering means designing the repeated process an AI agent
+follows while working on a task.
+
+A common loop is:
+1. Understand the goal.
+2. Decide on the next step.
+3. Take an action, such as calling a tool.
+4. Observe the result.
+5. Decide whether to finish or try another step.
+Example: An AI assistant is asked to find a suitable meeting time.
+It checks calendars, sees that its first suggestion does not work,
+checks another time, and then presents a suitable option.
+
+A well-designed loop needs limits, error handling, and checks so the
+agent does not repeat actions endlessly or make unsafe changes.
+
+Remember: Loop engineering is about building a useful and controlled
+cycle of action, feedback, and improvement.
+16. Computer Use
+Computer use means allowing an AI system to interact with a computer
+interface in ways similar to a person using a mouse and keyboard.
+
+Depending on its capabilities and permissions, it may be able to:
+- View screenshots.
+- Click buttons.
+- Type into fields.
+- Open menus.
+- Navigate websites or desktop applications.
+Example: You ask an AI assistant to find a document in a web-based
+file manager. It may open the file manager, search for the document, and
+show you the result.
+
+Computer use can make mistakes. Sensitive actions---such as sending
+messages, making purchases, or deleting files---should have suitable
+safeguards and human approval.
+
+Remember: Computer use lets an AI interact with graphical
+applications, rather than only exchanging text.
+17. Evaluation
+Evaluation is the process of testing an AI model or application to
+see how well it performs.
+
+You might check:
+- Accuracy: Is the answer correct?
+- Relevance: Does it answer the question?
+- Consistency: Does it perform well across similar requests?
+- Safety: Does it avoid unsafe or inappropriate actions?
+- Speed: How long does it take to respond?
+- Usefulness: Does the result actually help the user?
+Example: Before releasing a customer-support assistant, a team tests
+it with many sample questions and checks whether its answers follow
+company policies.
+
+Evaluation should use realistic examples and be repeated when the model,
+prompts, tools, or data change.
+
+Remember: Evaluation checks whether an AI system works well enough
+for its intended purpose.
+18. Security and Privacy
+Security is about protecting an AI application and its systems from
+unauthorized access, attacks, and misuse.
+
+Examples:
+- Keep passwords and API keys secret.
+- Give tools only the permissions they need.
+- Check who is allowed to access information.
+- Protect systems against malicious instructions and unsafe actions.
+Privacy is about handling people's personal or confidential
+information responsibly.
+
+Examples:
+- Do not expose private user information.
+- Collect only the data that is needed.
+- Limit who can view sensitive information.
+- Follow applicable privacy rules and explain how data is handled.
+Example: If an AI assistant can read company documents, it should
+only access documents that the current user is permitted to see.
+
+Remember: Security protects systems and access; privacy protects
+people's information and how it is used.
+19. Observability and Cost
+Observability means collecting information that helps a team
+understand what is happening inside an AI application.
+
+Three common parts are:
+- Logs: Records of events, such as a tool call or an error.
+- Metrics: Measurements, such as response time, number of
+  requests, or failure rate.
+- Traces: A record of the steps taken during one request,
+  especially when several services or tools are involved.
+Cost is the money needed to build and operate the application. Costs
+may include model usage, computer servers, storage, databases, and
+external services.
+
+Example: A team notices that its AI assistant is slow and expensive.
+Logs and traces show that it is searching the same information
+repeatedly. The team can improve the process to reduce delays and
+unnecessary usage.
+
+Remember: Observability helps explain how the system is behaving;
+cost monitoring helps explain what it costs to run.
+20. GEO and AEO
+These terms describe ways of organizing online content so that search
+systems and AI-powered answer services can understand and find it more
+easily.
+
+GEO --- Generative Engine Optimization means improving content so it
+has a better chance of being discovered, understood, or referenced by
+generative AI search experiences.
+
+AEO --- Answer Engine Optimization means structuring content so
+answer-focused search systems can identify clear answers to common
+questions.
+
+Example: A website that explains how to care for houseplants could:
+- Use clear headings.
+- Answer common questions directly.
+- Explain technical terms.
+- Include accurate, useful details.
+- Keep information up to date.
+GEO and AEO overlap, and neither guarantees that an AI service will show
+or cite a particular website.
+
+Remember: GEO and AEO are about making useful content easier for
+search and answer systems to understand and surface.
+21. AGI and Superintelligence
+These terms describe possible future levels of AI capability.
+
+AGI --- Artificial General Intelligence refers to a hypothetical AI
+system that can learn, understand, and perform a wide range of
+intellectual tasks at a level comparable to humans, rather than being
+designed mainly for a narrow set of tasks.
+
+Artificial Superintelligence (ASI) refers to a hypothetical AI
+system that would greatly exceed human abilities across most or all
+important intellectual areas.
+
+Simple comparison:
+- A narrow AI system might be very good at recognizing faces or
+  translating languages.
+- AGI would be able to handle a broad range of unfamiliar intellectual
+  tasks.
+- Superintelligence would exceed human performance across a very wide
+  range of intellectual tasks.
+There is no universally accepted test proving that AGI has been
+achieved. Superintelligence remains a hypothetical concept.
+
+Remember: AGI describes broad, human-comparable intelligence;
+superintelligence describes intelligence that would greatly exceed human
+capabilities.
+How the Concepts Fit Together
+Imagine building an AI assistant that helps people organize their work.
+1. Model training gives the AI its general learned capabilities.
+2. Fine-tuning, if needed, adapts the model to a more specific task
+   or style.
+3. Serving makes the model available through an application;
+   inference happens when it responds to a request.
+4. A user enters a prompt. The model processes it as tokens and
+   uses the available context.
+5. The application may use RAG to find relevant information in
+   documents.
+6. The AI may request tools to perform tasks, such as checking a
+   calendar.
+7. An agent can plan and carry out several steps. A skill can
+   provide reusable instructions, while a harness manages the
+   overall process and controls.
+8. MCP can provide a standard connection to external tools and
+   information. Computer use can let the system interact with
+   graphical applications.
+9. Loop engineering helps the agent act, observe results, and
+   decide what to do next.
+10. Evaluation checks whether the system works well. Security and
+    privacy protect users and information.
+11. Observability helps the team understand the system, while cost
+    monitoring helps control operating expenses.
+12. GEO and AEO help people make online information easier for
+    AI-powered search and answer systems to understand.
+A system does not need every one of these components. The right design
+depends on what the application is meant to do.
+Suggested Learning Order for Beginners
+If you are new to AI, learn the subjects in this order:
+1. AI models and LLMs.
+2. Prompts, tokens, and context.
+3. Training, inference, and serving.
+4. Hallucinations and evaluation.
+5. Tools and AI agents.
+6. RAG and MCP.
+7. Skills, harnesses, and loop engineering.
+8. Security, privacy, observability, and cost.
+9. Fine-tuning.
+10. Computer use, GEO, and AEO.
+11. AGI and superintelligence.
