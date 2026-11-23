@@ -1,6 +1,5 @@
-# The Brain of Every existing AI:
 
-## Some Most Important concepts that are must to know:
+# The Brain of Every existing AI :- Some Most Important concepts that are must to know:
 
 ## LLM / AI MODEL :
 
